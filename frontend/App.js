@@ -5,6 +5,10 @@ const win = Dimensions.get('window');
 const ratio = win.width/541; //541
 
 
+// router koycaz buraya switchler icin authenticated users should see the road page or else
+// React native router
+// Google vs Manual
+//
 export default function App() {
   return (
     <View style={styles.container}>
