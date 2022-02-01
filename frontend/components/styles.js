@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: 'transparent',
   },
-  googleLoginButton: {
+  googleLoginButton: { // DO THIS.
     height: 45,
     marginTop: 10,
     backgroundColor: 'green'
