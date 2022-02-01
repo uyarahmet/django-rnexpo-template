@@ -1,35 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Dimensions } from 'react-native';
+import React from 'react';
+import Login from './screens/Login.js';
+import Signup from './screens/Signup.js';
+import Home from './screens/Home.js'
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-const win = Dimensions.get('window');
-const ratio = win.width/541; //541
+const Stack = createStackNavigator();
 
-
-// router koycaz buraya switchler icin authenticated users should see the road page or else
-// React native router
-// Google vs Manual
-//
-export default function App() {
+function App(){
   return (
-    <View style={styles.container}>
-
-      <Image source={require("./assets/pngegg.png")} style={styles.road}/>
-      <StatusBar style="auto" />
-    </View>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Login" component = {Login}/>
+      <Stack.Screen name="Home" component = {Home}/>
+      <Stack.Screen name="Signup" component = {Signup}/>
+    </Stack.Navigator>
   );
 }
 
-const styles = StyleSheet.create({
-  road: {
-    flex: 1,
-    alignSelf: 'stretch',
-    width: win.width,
-    height: win.height,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default () => {
+  return (
+    <NavigationContainer>
+      <App/>
+    </ NavigationContainer>
+  )
+}

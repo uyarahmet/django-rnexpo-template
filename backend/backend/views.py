@@ -33,7 +33,7 @@ def password_reset_request(request):
 					c = {
 					"email":user.email,
 					'domain':'127.0.0.1:8000',
-					'site_name': 'ekare',
+					'site_name': 'featspeak',
 					"uid": urlsafe_base64_encode(force_bytes(user.pk)),
 					"user": user,
 					'token': default_token_generator.make_token(user),
