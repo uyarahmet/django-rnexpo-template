@@ -10,14 +10,4 @@
 
 </p>
 
-<br>
-
-<p align= "center">
- Full Stack Cross Platform Application of Featspeak which includes Django-ReactNative stack.
-  </p>
-  
-<br>
-
-<h2> Contributors: Ahmet Uyar, Caner Korkmaz</h2>
-
 
