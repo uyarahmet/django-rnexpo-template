@@ -7,6 +7,6 @@
 </p>
 
 
-Starter template for django backend and react native expo frontend mobile application.
+Starter template for django backend and react native expo frontend mobile application with user signup and login.
 
 
